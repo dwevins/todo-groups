@@ -1,1 +1,6 @@
-{{outlet}}
+<h1 class="page-title">New Category</h1>
+
+{{#simple-form onsubmit=(action 'addCategory') as |formValues|}}
+  <input type="text" class="title-input">
+  <button type="submit" name="button" class='submit'></button>
+{{/simple-form}}

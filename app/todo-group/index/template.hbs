@@ -5,6 +5,7 @@
     <div class="collection__item">
       <p class="todo-group__title">{{todo-group.title}}</p>
     </div>
+    {{#link-to 'todo-group.edit' todo-group.id class='edit-btn'}}Edit{{/link-to}}
   {{/each}}
 
 {{#link-to 'todo-group.new' class='new-btn'}}Add New{{/link-to}}

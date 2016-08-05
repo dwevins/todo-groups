@@ -6,8 +6,8 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('todo-group.index', {
-    path: '/todo-groups'
+  this.route('todo-group', {path: '/todo-groups'}, function () {
+    this.route('new');
   });
 });
 

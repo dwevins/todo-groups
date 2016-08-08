@@ -5,7 +5,7 @@ export default Ember.Controller.extend({
     addCategory(formValues) {
       this.store.createRecord('todo-group', formValues)
         .save().then(() => {
-          this.transitionToRoute(index);
+          this.transitionToRoute('/');
         });
     },
   },

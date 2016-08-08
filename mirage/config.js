@@ -1,4 +1,4 @@
-import config from 'todo-group/config/environment';
+import config from 'todo-groups/config/environment';
 
 export default function() {
 

@@ -1,6 +1,7 @@
 <h1 class="page-title">New Category</h1>
 
 {{#simple-form onsubmit=(action 'addCategory') as |formValues|}}
-  <input type="text" class="title-input">
-  <button type="submit" name="button" class='submit'></button>
+  <label class="label">Title</label>
+  {{input value=formValues.title type='text' class='title-input' placeholder='Title'}}
+  <input type="submit" name="button" class='submit' value='Save'>
 {{/simple-form}}

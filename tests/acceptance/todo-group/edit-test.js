@@ -1,5 +1,5 @@
 import { test } from 'qunit';
-import moduleForAcceptance from 'todo-group/tests/helpers/module-for-acceptance';
+import moduleForAcceptance from 'todo-groups/tests/helpers/module-for-acceptance';
 
 moduleForAcceptance('Acceptance | todo group/edit');
 

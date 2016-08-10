@@ -1,1 +1,9 @@
-<h1 class="page-title">Editing {{model.title}}</h1>
+<h1 class="page-title">{{model.title}}</h1>
+
+<ul class="collection">
+  {{#each model.items as |item|}}
+    <li class="collection__item">
+      <p class="todo-item__name">{{item.name}}</p>
+    </li>
+  {{/each}}
+</ul>

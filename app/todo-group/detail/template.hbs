@@ -2,8 +2,11 @@
 
 <ul class="collection">
   {{#each model.items as |item|}}
+  {{log item}}
     <li class="collection__item">
-      <p class="todo-item__name">{{item.title}}</p>
+      <div class="todo-item__name">
+        {{item.name}}
+      </div>
     </li>
   {{/each}}
   <li class="collection__item">

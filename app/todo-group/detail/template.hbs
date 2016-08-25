@@ -1,0 +1,19 @@
+<h1 class="page-title">{{model.title}}</h1>
+
+<ul class="collection">
+  {{#each model.items as |item|}}
+  {{log item}}
+    <li class="collection__item">
+      <div class="todo-item__name">
+        {{item.name}}
+      </div>
+    </li>
+  {{/each}}
+  <li class="collection__item">
+    {{#simple-form onsubmit=(action 'addItem') as |formValues|}}
+      <label class='label'>New Todo Item:</label>
+      {{input value=formValues.newItem type='text' class='new-item__input'}}
+      <button type='submit' class='submitBtn'>Add</button>
+    {{/simple-form}}
+  </li>
+</ul>
